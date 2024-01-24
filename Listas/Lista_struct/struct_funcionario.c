@@ -14,13 +14,16 @@ struct funcionarios{
 //Função que preenche os dados dos funcionarios
 void preenche(struct funcionarios * func){
   printf("Digite o nome do funcionario: ");
-  scanf(" %[^\n]", func->nome);
-  printf("Digite o salario do funcionario: ");
-  scanf("%f", &func->salario);
-  printf("Digite o identificador do funcionario: ");
-  scanf("%d", &func->identificador);
-  printf("Digite o cargo do funcionario: ");
-  scanf(" %[^\n]", func->cargo);
+   scanf(" %[^\n]", func->nome);
+  
+    printf("Digite o salario do funcionario: ");
+     scanf("%f", &func->salario);
+  
+      printf("Digite o identificador do funcionario: ");
+       scanf("%d", &func->identificador);
+  
+        printf("Digite o cargo do funcionario: ");
+         scanf(" %[^\n]", func->cargo);
 }
 
 //Função que imprime os dados dos funcionarios
@@ -33,6 +36,7 @@ void alterar(struct funcionarios * func){
 
   printf("Altere o salario de um dos funcionarios: ");
   scanf("%f", &func->salario);
+  
   printf("esses são os dados do funcionario apos a auteração:\n");
   printf("Nome: %s\n Salario: %f\n Identificador: %d\n Cargo: %s\n", func->nome, func->salario, func->identificador, func->cargo);
 }
