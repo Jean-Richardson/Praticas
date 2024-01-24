@@ -25,14 +25,13 @@ typedef struct Data{
 void preenche_mes(data *data_hoje){
   
   printf("Digite o dia: ");
-  scanf(" %d", &data_hoje->dia);
+    scanf(" %d", &data_hoje->dia);
 
-  printf("Digite o mes: ");
-  scanf(" %d", &data_hoje->mes);
+     printf("Digite o mes: ");
+       scanf(" %d", &data_hoje->mes);
 
-  printf("digite o ano:" );
-  scanf("%d", &data_hoje->ano);
-
+       printf("digite o ano:" );
+          scanf("%d", &data_hoje->ano);
 }
 
 void imprime_mes(data *data_hoje){
