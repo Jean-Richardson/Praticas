@@ -15,16 +15,16 @@ int quantidade;
 void cadastrar_fruta(struct fruta frutas[], int* i){
 
     printf ("\nNome da fruta:");
-    scanf(" %[^\n]", frutas[*i].nome);
+     scanf(" %[^\n]", frutas[*i].nome);
 
-    printf ("\nCor da fruta:");
-    scanf(" %[^\n]", frutas[*i].cor);
+      printf ("\nCor da fruta:");
+       scanf(" %[^\n]", frutas[*i].cor);
 
-    printf ("\nSabor da fruta:");
-    scanf(" %[^\n]", frutas[*i].sabor);
+       printf ("\nSabor da fruta:");
+        scanf(" %[^\n]", frutas[*i].sabor);
 
-    printf("\nQuantidade:");
-    scanf("%d", &frutas[*i].quantidade);
+         printf("\nQuantidade:");
+           scanf("%d", &frutas[*i].quantidade);
     (i)++;
 }
 
@@ -33,10 +33,10 @@ void listar_frutas(struct fruta frutas[], int quantidade, int i){
     for (i = 0; i < quantidade; i++) {
 
         printf("Frutas cadastradas:\n");
-        printf ("Nome: %s\n", frutas[i].nome);
-        printf ("Cor:  %s\n", frutas[i].cor);
-        printf ("Sabor: %s\n", frutas[i].sabor);
-        printf ("Quantidade: %d\n", frutas[i].quantidade);
+         printf ("Nome: %s\n", frutas[i].nome);
+          printf ("Cor:  %s\n", frutas[i].cor);
+           printf ("Sabor: %s\n", frutas[i].sabor);
+            printf ("Quantidade: %d\n", frutas[i].quantidade);
  }
 
  }
@@ -53,10 +53,10 @@ void listar_frutas(struct fruta frutas[], int quantidade, int i){
         if (strcmp(nome, frutas[i].nome) == 0) {
 
         printf("Fruta buscada:\n");
-        printf ("Nome: %s\n", frutas[i].nome);
-        printf ("Cor:  %s\n", frutas[i].cor);
-        printf ("Sabor: %s\n", frutas[i].sabor);
-        printf ("Quantidade: %d\n", frutas[i].quantidade);
+          printf ("Nome: %s\n", frutas[i].nome);
+            printf ("Cor:  %s\n", frutas[i].cor);
+              printf ("Sabor: %s\n", frutas[i].sabor);
+                printf ("Quantidade: %d\n", frutas[i].quantidade);
         }
     }
  }
