@@ -34,11 +34,11 @@ printf("Nome: %s\n Salario: %.2f\n Identificador: %d\n Cargo: %s\n", func->nome,
 //Função que altera o salario de um funcionario
 void alterar(struct funcionarios * func){
 
-  printf("Altere o salario de um dos funcionarios: ");
-  scanf("%f", &func->salario);
+   printf("Altere o salario de um dos funcionarios: ");
+     scanf("%f", &func->salario);
   
-  printf("esses são os dados do funcionario apos a auteração:\n");
-  printf("Nome: %s\n Salario: %f\n Identificador: %d\n Cargo: %s\n", func->nome, func->salario, func->identificador, func->cargo);
+     printf("esses são os dados do funcionario apos a auteração:\n");
+       printf("Nome: %s\n Salario: %f\n Identificador: %d\n Cargo: %s\n", func->nome, func->salario, func->identificador, func->cargo);
 }
 
 //Função que retorna o cargo de um funcionario com maior salario e vice versa
@@ -68,8 +68,8 @@ int main(void){
 
   int tamanho, i;
 
-  printf("digite a quantidade de funcionarios: ");
-  scanf("%d", &tamanho);
+   printf("digite a quantidade de funcionarios: ");
+     scanf("%d", &tamanho);
   
   struct funcionarios *func = malloc(tamanho * sizeof(struct funcionarios));
 
