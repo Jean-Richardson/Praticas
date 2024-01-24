@@ -4,9 +4,11 @@
 #define ALUNOS 10
 
 void saida(char *gabarito, char **alunos, int *n){
+    
     float nota = 0;
     float acertos = 0;
     float aprovados = 0;
+    
     for (int i = 0; i < ALUNOS; i++){
         nota = 0;
         acertos = 0;
@@ -17,8 +19,10 @@ void saida(char *gabarito, char **alunos, int *n){
                 acertos++;
             }
         }
+        
         nota = acertos * 10 / (*n);
         printf("Aluno %d\nNota: %.2f\n", i + 1, nota);
+        
         if (nota >= 6){
           
             aprovados++;
@@ -32,10 +36,13 @@ int main(){
     int n = 0;
     int i;
     int j;
+    
     printf("Insira a quantidade de questoes da prova: ");
-    scanf("%d", &n);
+     scanf("%d", &n);
+    
     char *gabarito = (char *)malloc(n * sizeof(char));
     char **alunos = (char **)malloc(ALUNOS * sizeof(char *));
+    
     for (i = 0; i < ALUNOS; i++){
       
         alunos[i] = (char *)malloc(n * sizeof(char));
@@ -43,7 +50,7 @@ int main(){
     for (i = 0; i < n; i++){
       
         printf("Insira a resposta da %dº questao: ", i + 1);
-        scanf(" %c", &gabarito[i]);
+         scanf(" %c", &gabarito[i]);
     }
     for (i = 0; i < ALUNOS; i++){
       
@@ -52,7 +59,7 @@ int main(){
         for (j = 0; j < n; j++){
           
             printf("Insira a resposta da %dº questao: ", j + 1);
-            scanf(" %c", &alunos[i][j]);
+             scanf(" %c", &alunos[i][j]);
         }
     }
   
