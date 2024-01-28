@@ -31,10 +31,13 @@ int main() {
 
   for (index = 0; index < 2; index++) {
     printf("Cadastro de disciplina %d\n", index + 1);
+    
     printf("Insira o nome da disciplina %d", index + 1);
     scanf(" %[^\n]", aluno->materias[index].nome);
+    
     printf("Insira a nota da disciplina %d", index + 1);
     scanf("%f", &aluno->materias[index].nota);
+    
     printf("Insira o código da disciplina %d", index + 1);
     scanf("%d", &aluno->materias[index].codigo);
   }
