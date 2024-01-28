@@ -58,14 +58,14 @@ int main(){
 
   void imprimeprof(struct prof * professor){
 
-printf("Nome: %s\n ", professor -> nome);
+  printf("Nome: %s\n ", professor -> nome);
 
-printf("Idade: %d\n ", professor -> idade);
+  printf("Idade: %d\n ", professor -> idade);
 
-printf("Disciplina: %s\n ", professor -> disc);
+  printf("Disciplina: %s\n ", professor -> disc);
 
-printf("Email: %s\n ", professor -> email);
+  printf("Email: %s\n ", professor -> email);
 
-printf("Gostasse?: %s\n", professor -> gracinha);    
+  printf("Gostasse?: %s\n", professor -> gracinha);    
 
 }
