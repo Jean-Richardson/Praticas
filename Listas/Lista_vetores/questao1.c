@@ -14,10 +14,10 @@ int main()
     for (int i = 0; i < n; i++){
       
         printf("Qual o sexo da %dº pessoa? (F/M): ", i + 1);
-         scanf(" %c", &sexo[i]);
+        scanf(" %c", &sexo[i]);
         
-          printf("A pessoa gostou ou nao? (1 - Gostou) (0 - Nao)");
-           scanf("%d", &opiniao[i]);
+        printf("A pessoa gostou ou nao? (1 - Gostou) (0 - Nao)");
+        scanf("%d", &opiniao[i]);
     }
   
     float fa = 0;//Feminino aprovou
