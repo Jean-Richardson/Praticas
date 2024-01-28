@@ -53,12 +53,12 @@ void preenche(struct alunos * estudante){
 
 void imprime(struct alunos * estudante){
 
-printf("Nome: %s\n ", estudante -> nome);
+  printf("Nome: %s\n ", estudante -> nome);
 
-printf("Idade: %d\n ", estudante -> idade);
+  printf("Idade: %d\n ", estudante -> idade);
 
-printf("Matrícula: %ld\n ", estudante -> mat);
+  printf("Matrícula: %ld\n ", estudante -> mat);
 
-printf("Email: %s\n ", estudante -> email);
+  printf("Email: %s\n ", estudante -> email);
 
 }
