@@ -14,17 +14,17 @@ typedef struct Pessoas{
 
 void preenche(Pessoa *pessoa){
    printf("Informe o nome: ");
-    scanf(" %[^\n]", pessoa->nome);
+   scanf(" %[^\n]", pessoa->nome);
 
-     printf("Informe a idade: ");
-       scanf(" %d", &pessoa->idade);
+   printf("Informe a idade: ");
+   scanf(" %d", &pessoa->idade);
 
-        printf("Informe o genero:\n 0-Masculisno \n 1-Feminino ");
-          scanf(" %d", &pessoa->genero_pessoa);
+   printf("Informe o genero:\n 0-Masculisno \n 1-Feminino ");
+   scanf(" %d", &pessoa->genero_pessoa);
 }
 
 void imprime_pessoa(Pessoa * pessoa){
-  printf("Nome: %s\n Idade:%d\n Genero:%s\n", pessoa->nome, pessoa->idade,pessoa->genero_pessoa==masculino?"Masculino":"Feminino");
+   printf("Nome: %s\n Idade:%d\n Genero:%s\n", pessoa->nome, pessoa->idade,pessoa->genero_pessoa==masculino?"Masculino":"Feminino");
 }
 
 int main(){
