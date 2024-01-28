@@ -13,13 +13,13 @@ struct pessoas{
 //Função que preenche os dados dos funcionarios
 void preenche(struct pessoas * pessoa){
   printf("Digite o nome da pessoa: ");
-    scanf(" %[^\n]", pessoa->nome);
+  scanf(" %[^\n]", pessoa->nome);
   
-      printf("Digite a idade da pessoa: ");
-        scanf("%d", &pessoa->idade);
+  printf("Digite a idade da pessoa: ");
+  scanf("%d", &pessoa->idade);
   
-          printf("Digite o numero do documento da pessoa: ");
-           scanf("%d", &pessoa->documento);
+  printf("Digite o numero do documento da pessoa: ");
+  scanf("%d", &pessoa->documento);
 }
 
 //Função que imprime os dados dos funcionarios
@@ -31,10 +31,10 @@ printf("Nome: %s\n Salario: %d\n Identificador: %d\n", pessoa->nome, pessoa->ida
 void alterar(struct pessoas * pessoa){
 
   printf("Atualize a idade de uma pessoa: ");
-   scanf("%d", &pessoa->idade);
+  scanf("%d", &pessoa->idade);
   
-    printf("esses são os dados da pessoa apos a alteracao:\n");
-     printf("Nome: %s\n Idade: %d\n Documento: %d\n", pessoa->nome, pessoa->idade, pessoa->documento);
+  printf("esses são os dados da pessoa apos a alteracao:\n");
+  printf("Nome: %s\n Idade: %d\n Documento: %d\n", pessoa->nome, pessoa->idade, pessoa->documento);
 }
 
 //Função que retorna o cargo de um funcionario com maior salario e vice versa
@@ -48,7 +48,7 @@ void maiormenorsalario(struct pessoas * pessoa, int tamanho){
     }
   }
 
-  printf("O nome da pessoa mais velha é: %s\n, sua idade é: %d", pessoa[maior].nome, pessoa[maior].idade);
+   printf("O nome da pessoa mais velha é: %s\n, sua idade é: %d", pessoa[maior].nome, pessoa[maior].idade);
   
   for(i = 0; i< tamanho;i++){
     if(pessoa[i].idade < pessoa[menor].idade){
@@ -56,7 +56,7 @@ void maiormenorsalario(struct pessoas * pessoa, int tamanho){
     }
   }
  
-  printf("\nO nome da pessoa mais jovem é: %s\n, sua idade é: %d", pessoa[menor].nome, pessoa[menor].idade);
+   printf("\nO nome da pessoa mais jovem é: %s\n, sua idade é: %d", pessoa[menor].nome, pessoa[menor].idade);
   
 }
 
