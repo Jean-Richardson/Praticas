@@ -1,0 +1,8 @@
+Amanda	 7.50	 aprovado
+Alberto	 5.17	 reprovado
+Jane	 6.43	 reprovado
+Igor	 8.83	 aprovado
+Samara	 9.00	 aprovado
+Maria Luiza	 10.00	 aprovado
+Cesar	 9.00	 aprovado
+Pedro Felipe	 7.00	 aprovado
